@@ -148,4 +148,12 @@ void main() {
   int remainingdays = (days % 365) % 7;
 
   print('year: $year weeks: $weeks remainingdays: $remainingdays');
+
+  //Question 11: Write Program to convert days to hours, minutes and seconds
+  int totalSeconds = days * 24 * 60 * 60;
+  int hours = totalSeconds ~/ 3600;
+  int minutes = (totalSeconds % 3600) ~/ 60;
+  int seconds = totalSeconds % 60;
+
+  print('hours: $hours minutes: $minutes seconds: $seconds');
 }
