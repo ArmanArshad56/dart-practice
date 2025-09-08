@@ -142,10 +142,10 @@ void main() {
   print('area of square: $areaSquare');
 
   //Question 10: Write Program to convert days to years, weeks and days
-  // int days = 2500;
-  // int year = days ~/ 365;
-  // int weeks = (days % 365) ~/ 7;
-  // int remainingdays = (days % 365) % 7;
+  int days = 2500;
+  int year = days ~/ 365;
+  int weeks = (days % 365) ~/ 7;
+  int remainingdays = (days % 365) % 7;
 
-  // print('year: $year weeks: $weeks remainingdays: $remainingdays');
+  print('year: $year weeks: $weeks remainingdays: $remainingdays');
 }
