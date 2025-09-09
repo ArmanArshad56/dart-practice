@@ -156,4 +156,10 @@ void main() {
   int seconds = totalSeconds % 60;
 
   print('hours: $hours minutes: $minutes seconds: $seconds');
+
+  // Question 12 : Wirte program to var data type
+  var name = 'Arman';
+  var age = 20;
+  var isStudent = true;
+  print('name: $name \nage: $age \nisStudent: $isStudent');
 }
