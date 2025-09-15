@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // //is mai ham +,-,*,/ yah sab ko run kara ga
   // int number;
@@ -161,5 +163,20 @@ void main() {
   var name = 'Arman';
   var age = 20;
   var isStudent = true;
-  print('name: $name \nage: $age \nisStudent: $isStudent');
+  print('name: $name \n age: $age \n isStudent: $isStudent');
+
+  // Question 13: Write program to stdin readlinesync it works on dart not on flutter
+  print('enter your name:');
+  String? name1 = stdin.readLineSync();
+  print('your name is $name1');
+
+  print('enter your father name:');
+  String? fatherName = stdin.readLineSync();
+  print('enter your age:');
+
+  int age1 = int.parse(stdin.readLineSync()!);
+
+  print('your name is $name1 father name is $fatherName and your age is $age1');
+
+  stdout.write("Wellcome To The A-TECH SOLUTIONS");
 }
