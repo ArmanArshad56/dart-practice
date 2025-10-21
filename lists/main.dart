@@ -10,31 +10,31 @@ User se 5 students ke names input lo.
 User se unke exam pass/fail status input lo (boolean).
 Program print karega passed students aur failed students.
 */
-  // List<String> studentName = []; // list mai name store karaga
-  // List<bool> passStatus = []; // list mai pass/fail pata chalaga
+  List<String> studentName = []; // list mai name store karaga
+  List<bool> passStatus = []; // list mai pass/fail pata chalaga
 
-  // // input 5 students name
-  // for (int i = 1; i <= 5; i++) {
-  //   stdout.write('enter name of student $i: ');
-  //   String name = stdin.readLineSync()!;
-  //   studentName.add(name);
+  // input 5 students name
+  for (int i = 1; i <= 5; i++) {
+    stdout.write('enter name of student $i: ');
+    String name = stdin.readLineSync()!;
+    studentName.add(name);
 
-  //   stdout.write('did $name pass the exam (true/false): ');
-  //   bool status = stdin.readLineSync()!.toLowerCase() == 'true';
-  //   passStatus.add(status);
-  // }
-  // print('\n --- Passed Student ---');
-  // for (int i = 0; i < studentName.length; i++) {
-  //   if (passStatus[i]) {
-  //     print(studentName[i]);
-  //   }
-  // }
-  // print('\n --- failed Student ---');
-  // for (int i = 0; i < studentName.length; i++) {
-  //   if (!passStatus[i]) {
-  //     print(studentName[i]);
-  //   }
-  // }
+    stdout.write('did $name pass the exam (true/false): ');
+    bool status = stdin.readLineSync()!.toLowerCase() == 'true';
+    passStatus.add(status);
+  }
+  print('\n --- Passed Student ---');
+  for (int i = 0; i < studentName.length; i++) {
+    if (passStatus[i]) {
+      print(studentName[i]);
+    }
+  }
+  print('\n --- failed Student ---');
+  for (int i = 0; i < studentName.length; i++) {
+    if (!passStatus[i]) {
+      print(studentName[i]);
+    }
+  }
   /*
    Question 2: Increment, decrement operations based on our learning
     3. Example Problem:
