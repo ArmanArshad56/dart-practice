@@ -1,6 +1,8 @@
 void main() {
   test();
   print(findmaximumNumber());
+  SWITCH();
+  print(Map);
 }
 
 int findmaximumNumber() {
@@ -18,6 +20,37 @@ int findmaximumNumber() {
 // thora se delay print hoga isliiya yah (FUTURE FUNCTION) hota hi...
 void test() async {
   print('Arman Arshad');
-  await Future.delayed(Duration(seconds: 5));
+  await Future.delayed(Duration(seconds: 3));
   print('dart language');
+}
+
+// SWITCH STATEMENT...
+void SWITCH() {
+  int x = 60;
+  int y = 40;
+
+  var Operation = '-';
+  var Operation1 = '+';
+
+  // if else condition
+  if (Operation == '-') {
+    print(x - y);
+  }
+
+  // switch statement
+  switch (Operation = '+') {
+    case '-':
+      print(x - y);
+      return;
+    case '+':
+      print(x + y);
+      return;
+  }
+}
+
+// HASH / MAP
+void MAP() {
+  Map map = Map();
+  map = {'name': 'anas arshad', 'age': 20};
+  print(Map);
 }
